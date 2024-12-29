@@ -43,7 +43,7 @@ const styles = {
     padding: "20px",
     fontFamily: "Arial, sans-serif",
     minHeight: "80vh",
-    textAlign: "center" as "center",
+    textAlign: "center" as const,
   },
   heading: {
     fontSize: "2.5rem",
@@ -55,7 +55,7 @@ const styles = {
   },
   form: {
     display: "flex",
-    flexDirection: "column" as "column",
+    flexDirection: "column" as const,
     alignItems: "center",
     gap: "10px",
     maxWidth: "400px",
