@@ -14,7 +14,7 @@ function Third(){
                 <div className={thirs["third-container"]}>
                     <div className={thirs.avatar} style={{backgroundImage:'url("GOKUL.jpg")'}} ></div>
                     <div className={thirs.content}>
-                        <p>CEO of SSV Traders Mr.Gokul Thangavel brings a wealth of experience and leadership to the company. With a background in business administration and a keen eye for market trends, Gokul has guided SSV Traders through periods of rapid growth and market expansion. Under his stewardship, the company has solidified its position as a leader in the tech industry, delivering innovative products and solutions to customers worldwide. Gokul's strategic vision, coupled with his commitment to fostering a culture of collaboration .</p>
+                        <p>CEO of SSV Traders Mr.Gokul Thangavel brings a wealth of experience and leadership to the company. With a background in business administration and a keen eye for market trends, Gokul has guided SSV Traders through periods of rapid growth and market expansion. Under his stewardship, the company has solidified its position as a leader in the tech industry, delivering innovative products and solutions to customers worldwide. Gokul`&#39;`s strategic vision, coupled with his commitment to fostering a culture of collaboration .</p>
                     </div>
                 </div>
             </div>

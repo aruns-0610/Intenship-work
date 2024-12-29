@@ -5,7 +5,7 @@ const ContactUs: React.FC = () => {
     <div style={styles.container}>
       <h1 style={styles.heading}>Contact Us</h1>
       <p style={styles.description}>
-        We'd love to hear from you! Fill out the form below or reach us through the provided details.
+        We `&#39;`d love to hear from you! Fill out the form below or reach us through the provided details.
       </p>
       <form style={styles.form}>
         <input

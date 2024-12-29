@@ -45,7 +45,7 @@ export default function Home() {
 
             <button className="connect-button cta-button">
               <MessageSquare className="icon" />
-              Let's Connect
+              Let`&#39;`s Connect
             </button>
 
             <button className="menu-button" onClick={() => setIsOpen(!isOpen)}>
