@@ -50,7 +50,7 @@ const styles = {
     textAlign: "center" as const,
   },
   heading: {
-    fontSize: "2.5rem",
+    fontSize: "2rem",
     marginBottom: "10px",
   },
   description: {
