@@ -43,7 +43,6 @@ body {
   border-radius: 16px;
   transition: background-color 0.3s;
   height: auto;
-  border: 1px solid red;
   min-height: 95vh;
 }
 
