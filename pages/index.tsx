@@ -7,7 +7,7 @@ import Second from './second';
 import Third from './third';
 import ContactUs from './contact';
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [crazyMode, setCrazyMode] = useState(false);
 
   return (
@@ -45,10 +45,10 @@ export default function Home() {
 
             <button className="connect-button cta-button">
               <MessageSquare className="icon" />
-              Let`&#39;`s Connect
+              Let&#39;s Connect
             </button>
 
-            <button className="menu-button" onClick={() => setIsOpen(!isOpen)}>
+            <button className="menu-button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <Menu className="icon" />
               <span className="sr-only">Toggle menu</span>
             </button>

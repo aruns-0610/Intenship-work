@@ -11,24 +11,27 @@ function Second() {
             <div className={styles["second-container"]} style={{
                     backgroundImage: 'url("/diamond.jpg")',
             }}>
+                <h1>Diamond Cutting</h1>
             </div>
 
                 <div className={styles["second-container"]} style={{
                     backgroundImage: 'url("/free.jpg")',
             }}>
+                <h1>Freelancing</h1>
                 </div>
 
                 <div className={styles["second-container"]} style={{
                     backgroundImage: 'url("/coffe.jpg")',
                     backgroundPosition:'left'
             }}>
+                <h1>Coffee</h1>
                     
                 </div>
 
                 <div className={styles["second-container"]} style={{
                     backgroundImage:'url("/gold.jpg")'
                 }}>
-                    <p>Financing is the process of providing funds for business activities, investments, or personal needs, often through loans, credit, or equity. It enables individuals and organizations to achieve their goals by leveraging external resources.</p>
+                    <h1>Financing</h1>
                 </div>
 
             </div>

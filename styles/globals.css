@@ -21,7 +21,6 @@ body {
   background-color: #09090b;
   margin: 0;
   padding: 8px;
-  min-height: 100vh;
 }
 
 @media (min-width: 640px) {
@@ -43,7 +42,9 @@ body {
   background-color: var(--background);
   border-radius: 16px;
   transition: background-color 0.3s;
-  height: 100vh;
+  height: auto;
+  border: 1px solid red;
+  min-height: 95vh;
 }
 
 @media (min-width: 640px) {
@@ -271,6 +272,7 @@ body {
   font-size: 12px;
 }
 
+
 .dark .toggle-container {
   background-color: #27272a;
 }
@@ -306,3 +308,6 @@ body {
   color: var(--background);
 }
 
+.p{
+  color: white;
+}

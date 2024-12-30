@@ -2,6 +2,7 @@ import React from "react";
 
 const ContactUs: React.FC = () => {
   return (
+    <>
     <div style={styles.container}>
       <h1 style={styles.heading}>Contact Us</h1>
       <p style={styles.description}>
@@ -33,6 +34,9 @@ const ContactUs: React.FC = () => {
         You can also reach us at: <a href="mailto:info@internzo.com" style={styles.link}>info@internzo.com</a>
       </p>
     </div>
+    <p className="p">&copy; 2024 copyrights reserved</p>
+    <p className="p">Developed by Saravana</p>
+    </>
   );
 };
 
