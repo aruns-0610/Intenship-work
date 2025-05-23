@@ -1,43 +1,47 @@
-import styles from '../styles/services.module.css'
+import styles from "../styles/services.module.css";
+import Image from "next/image";
 function Second() {
-    return(
-        <div className={styles.second}>
-            <h1 className={styles["second-heading"]}>
-                Our Services
-            </h1>
-            <hr className={styles.hr}></hr>
+  return (
+    <div className={styles.second}>
+      <h1 data-aos="zoom-in-down" className={styles["second-heading"]}>
+        Our <span style={{ color: "var(--main-color)" }}>Services</span>
+      </h1>
+      {/* <hr data-aos="zoom-in-down" className={styles.hr}></hr> */}
 
-            <div className={styles.slider}>
-            <div className={styles["second-container"]} style={{
-                    backgroundImage: 'url("/diamond.jpg")',
-            }}>
-                <h1>Diamond Cutting</h1>
-            </div>
-
-                <div className={styles["second-container"]} style={{
-                    backgroundImage: 'url("/free.jpg")',
-            }}>
-                <h1>Freelancing</h1>
-                </div>
-
-                <div className={styles["second-container"]} style={{
-                    backgroundImage: 'url("/coffe.jpg")',
-                    backgroundPosition:'left'
-            }}>
-                <h1>Coffee</h1>
-                    
-                </div>
-
-                <div className={styles["second-container"]} style={{
-                    backgroundImage:'url("/gold.jpg")'
-                }}>
-                    <h1>Financing</h1>
-                </div>
-
-            </div>
-            
+      <div data-aos="zoom-in-up" className={styles.slider}>
+        <div
+          className={styles["second-container"]}
+          //   style={{
+          //     backgroundImage: 'url("/diamond.jpg")',
+          //   }}
+        >
+          <Image
+            src="/diamond.jpg"
+            className="img"
+            width={400}
+            height={300}
+            alt=""
+          />
+          <h1>Diamond Cutting</h1>
         </div>
-    )
+
+        <div className={styles["second-container"]}>
+          <Image src="/free.jpg" width={400} height={300} alt="" />
+          <h1>Freelancing</h1>
+        </div>
+
+        <div className={styles["second-container"]}>
+          <Image src="/coffe.jpg" width={400} height={300} alt="" />
+          <h1>Coffee</h1>
+        </div>
+
+        <div className={styles["second-container"]}>
+          <Image src="/gold.jpg" width={400} height={300} alt="" />
+          <h1>Financing</h1>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Second;

@@ -7,9 +7,13 @@
 .second-heading {
   color: rgba(255, 255, 255, 0.903); /* Dark text for readability */
   text-align: center;
-  margin-top: 20vh;
-  font-size: 3rem;
-  font-family: 'Arial', sans-serif;
+  margin-top: 10vh;
+  font-size: 4rem;
+  font-family: "Arial", sans-serif;
+}
+
+.img {
+  border-radius: 12px;
 }
 
 .hr {
@@ -25,36 +29,25 @@
   flex-wrap: wrap;
   gap: 40px;
   padding: 0 1rem;
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 
 /* Individual service container */
 .second-container {
-  flex: 1 1 calc(25% - 20px); /* Four items per row */
-  max-width: 300px;
-  height: 20rem;
-  border: 1px solid #ddd; /* Light border */
-  background-color: #fff; /* White background */
-  border-radius: 20px;
-  transition: 0.5s;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background: var(--bg-color);
+  border-radius: 27px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px var(--main-color);
+  padding: 20px;
+  transition: all 0.5s ease; /* Subtle shadow */
 }
 
-.second-container h1{
-  text-align: center;
+.second-container h1 {
   color: #fff;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0;
-  bottom: 0;
   padding: 10px;
   transition: 1s;
   z-index: 1;
+  margin: 0;
   text-shadow: 1px 2px 3px black;
 }
 

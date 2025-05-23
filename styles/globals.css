@@ -5,6 +5,10 @@
   --primary: #18181b;
   --primary-hover: #27272a;
   --accent: #f97316;
+  --bg-color: #000;
+  --snd-bg-color: #111;
+  --text-color: #fff;
+  --main-color: #45ffca;
 }
 
 .dark {
@@ -17,32 +21,38 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   background-color: #09090b;
   margin: 0;
   padding: 8px;
+}
+
+span {
+  color: var(--text);
 }
 
 @media (min-width: 640px) {
   body {
     padding: 16px;
   }
-  .container{
+  .container {
     height: auto;
   }
 }
 @media (max-width: 1000px) {
-  
-  .hero-image{
+  .hero-image {
+    display: none;
+  }
+  .img-bg {
     display: none;
   }
 }
 
-
 .container {
   max-width: 95%;
   margin: 0 auto;
-  background-color: var(--background);
+  background-color: var(--bg-color);
   border-radius: 16px;
   transition: background-color 0.3s;
   height: auto;
@@ -72,6 +82,10 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding: 2px 6px;
+  transition: background-position 0.2s ease-in;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .logo-icon {
@@ -80,15 +94,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary);
-  color: var(--background);
+  background-color: var(--text-color);
+  color: var(--text-color);
   border-radius: 4px;
   font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .logo-text {
   font-weight: 600;
-  color: var(--text);
+  font-size: 1.2rem;
+  color: var(--text-color);
+  span {
+    color: var(--main-color);
+  }
 }
 
 .nav {
@@ -128,6 +147,19 @@ body {
 @media (min-width: 640px) {
   .header-actions {
     gap: 16px;
+  }
+}
+
+.language-select {
+  button {
+    display: flex;
+    justify-content: center;
+    padding: 5px 8px;
+    font-size: 1rem;
+    span {
+      margin-top: 3px;
+      margin-left: 4px;
+    }
   }
 }
 
@@ -199,7 +231,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.025em;
-  color: var(--text);
+  color: var(--text-color);
 }
 
 @media (min-width: 640px) {
@@ -216,8 +248,9 @@ body {
 
 .hero-description {
   max-width: 28rem;
-  font-size: 14px;
-  color: var(--text-muted);
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 600;
 }
 
 @media (min-width: 640px) {
@@ -241,9 +274,9 @@ body {
   transition: background-color 0.3s;
 }
 
-.cta-button:hover {
+/* .cta-button:hover {
   background-color: var(--primary-hover);
-}
+} */
 
 .image-container {
   display: flex;
@@ -273,7 +306,6 @@ body {
   border-radius: 9999px;
   font-size: 12px;
 }
-
 
 .dark .toggle-container {
   background-color: #27272a;
@@ -310,6 +342,64 @@ body {
   color: var(--background);
 }
 
-.p{
+.p {
   color: white;
+}
+
+/* nav css */
+
+.nav a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: all 0.5s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav a:hover {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+/* connect-button */
+
+.connect-button {
+  background: transparent;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  font-weight: 800;
+}
+
+.connect-button:hover {
+  background: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 0 0 15px var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  background: var(--main-color);
+  border-radius: 0.3rem;
+  box-shadow: none;
+  font-size: 0.9rem;
+  color: var(--bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: var(--text-color);
+  box-shadow: 0 0 1.6rem var(--main-color);
+}
+
+.img-bg {
+  background-color: white;
+  position: absolute;
+  top: 22%;
+  width: 200px;
+  height: 30vh;
+  z-index: -1;
 }
