@@ -1,15 +1,48 @@
 import React from "react";
 import "boxicons/css/boxicons.min.css";
 import cssSheet from "../styles/contact.module.css";
+import Image from "next/image";
 
 const ContactUs: React.FC = () => {
   return (
     <>
       <div style={styles.container}>
         <h1 style={styles.heading}>Contact Us</h1>
+        <div style={styles.details} className="contact-us-details">
+          <div style={styles.adrDiv} className="addr">
+            <div style={styles.imgDiv} className="img-div">
+              <Image src="/locations-icon.png" width={23} height={23} alt="" />
+            </div>
+            <div className="addr-info">
+              <span style={styles.span}>Address</span>
+              <p>182 2th street, New York NY 10016</p>
+            </div>
+          </div>
+          <div className="addr">
+            <div style={styles.imgDiv} className="img-div">
+              <i className="bx  bx-phone"></i>
+            </div>
+            <div className="addr-info">
+              <span style={styles.span}>Phone</span>
+              <p>+91 8754989934</p>
+            </div>
+          </div>
+          <div className="addr">
+            <div style={styles.imgDiv} className="img-div">
+              <i className="bx  bx-send"></i>
+            </div>
+            <div className="addr-info">
+              <span style={styles.span}>Email</span>
+              <p>
+                <a>info@internzo.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
         <p style={styles.description}>
-          We `&#39;`d love to hear from you! Fill out the form below or reach us
-          through the provided details.
+          {/* We `&#39;`d love to hear from you! Fill out the form below or reach us
+          through the provided details. */}
+          Get in touch with us
         </p>
         <form style={styles.form}>
           <input
@@ -24,6 +57,12 @@ const ContactUs: React.FC = () => {
             style={styles.input}
             required
           />
+          <input
+            type="text"
+            placeholder="Subject"
+            style={styles.input}
+            required
+          />
           <textarea
             placeholder="Your Message"
             style={styles.textarea}
@@ -33,12 +72,12 @@ const ContactUs: React.FC = () => {
             Send Message
           </button>
         </form>
-        <p style={styles.footer}>
+        {/* <p style={styles.footer}>
           You can also reach us at:{" "}
           <a href="mailto:info@internzo.com" style={styles.link}>
             info@internzo.com
           </a>
-        </p>
+        </p> */}
       </div>
       <div className="footer-div" style={{ textAlign: "center" }}>
         <div className={cssSheet["social-media"]}>
@@ -74,7 +113,7 @@ const styles = {
     marginBottom: "10px",
   },
   description: {
-    fontSize: "1.2rem",
+    fontSize: "1.6rem",
     marginBottom: "20px",
   },
   form: {
@@ -87,30 +126,36 @@ const styles = {
   },
   input: {
     width: "100%",
-    padding: "10px",
+    padding: "15px",
     fontSize: "1rem",
-    borderRadius: "5px",
-    border: "1px solid #555",
-    backgroundColor: "transparent",
+    borderRadius: "8px",
+    border: "none",
+    backgroundColor: "black",
     color: "#fff",
   },
   textarea: {
     width: "100%",
-    padding: "10px",
+    padding: "15px",
     fontSize: "1rem",
-    borderRadius: "5px",
-    border: "1px solid #555",
-    backgroundColor: "transparent",
+    borderRadius: "8px",
+    border: "none",
+    backgroundColor: "black",
     color: "#fff",
-    height: "100px",
+    height: "160px",
+    marginBottom: "2rem",
   },
   button: {
-    padding: "10px 20px",
-    fontSize: "1rem",
-    borderRadius: "5px",
-    border: "1px solid rgba(255,255,255,0.5)",
-    backgroundColor: "transparent",
-    color: "#fff",
+    display: "inline-block",
+    padding: "0.8rem 1rem",
+    background: "var(--main-color)",
+    borderRadius: "0.3rem",
+    boxShadow: "none",
+    fontSize: "0.9rem",
+    border: "none",
+    color: "var(--bg-color)",
+    letterSpacing: "0.1rem",
+    fontWeight: "600",
+    marginBottom: "1.5rem",
     cursor: "pointer",
   },
   buttonHover: {
@@ -146,6 +191,34 @@ const styles = {
     borderRadius: "50%",
     margin: "0 10px",
     transition: "0.3s ease-in-out",
+  },
+  span: {
+    color: "var(--main-color)",
+    fontWeight: "550",
+  },
+
+  details: {
+    display: "flex",
+    justifyContent: "center",
+    gap: "4rem",
+    padding: "2rem",
+  },
+
+  imgDiv: {
+    backgroundColor: "var(--main-color)",
+    borderRadius: "2rem",
+    height: "2.2rem",
+    width: "3.15rem",
+    paddingTop: "1rem",
+    color: "black",
+    margin: "0 auto 1rem auto",
+    marginBottom: "1rem",
+    fontSize: "1.3rem",
+  },
+
+  adrDiv: {
+    textAlign: "center" as const,
+    width: "160px",
   },
 };
 

@@ -16,7 +16,7 @@ function Second() {
           //   }}
         >
           <Image
-            src="/diamond.jpg"
+            src="/diamond-cutting-img.webp"
             className="img"
             width={400}
             height={300}
@@ -26,17 +26,17 @@ function Second() {
         </div>
 
         <div className={styles["second-container"]}>
-          <Image src="/free.jpg" width={400} height={300} alt="" />
+          <Image src="/freelancer-img.webp" width={400} height={300} alt="" />
           <h1>Freelancing</h1>
         </div>
 
         <div className={styles["second-container"]}>
-          <Image src="/coffe.jpg" width={400} height={300} alt="" />
+          <Image src="/coffee-img-icon.jpg" width={400} height={300} alt="" />
           <h1>Coffee</h1>
         </div>
 
         <div className={styles["second-container"]}>
-          <Image src="/gold.jpg" width={400} height={300} alt="" />
+          <Image src="/finance-img.jpg" width={400} height={300} alt="" />
           <h1>Financing</h1>
         </div>
       </div>
